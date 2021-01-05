@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: grpc-eureka-server
+  profiles:
+    active: ${grpc-eureka-profile:slave1}
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+info:
+  app:
+    encoding:UTF-8
+    java.source:1.8
+    java.target:1.8
