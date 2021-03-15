@@ -70,5 +70,20 @@
         </plugins>
     </build>
 
+    <!--推荐位置，放在工程目录里，上传至github上后，无论谁拉取都可以自动加载maven依赖-->
+    <repositories>
+        <repository>
+            <id>nexus-aliyun</id>
+            <name>Nexus aliyun</name>
+            <layout>default</layout>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
 
 </project>

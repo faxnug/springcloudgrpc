@@ -4,6 +4,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://${cloudServerSlave1:localhost}:8781/eureka/
+    register-with-eureka: false
+    fetch-registry: false
   instance:
     hostname: ${cloudServerSlave1:localhost}
   server:
